@@ -146,7 +146,7 @@ footer a{color:var(--cream)}
 
 <header class="nav" id="nav"><div class="wrap">
  <a href="#" class="brand"><div class="seal">AB</div><div><b>Antonio Barbiere</b><small>Itaim Paulista · SP</small></div></a>
- <nav class="links"><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#avaliacoes">Avaliações</a><a href="#visite">Localização</a></nav>
+ <nav class="links"><a href="#servicos">Serviços</a><a href="#equipe">O barbeiro</a><a href="#avaliacoes">Avaliações</a><a href="#visite">Localização</a></nav>
  <a class="btn btn-red bk" href="#" target="_blank" rel="noopener">Agendar</a>
 </div></header>
 
@@ -154,7 +154,7 @@ footer a{color:var(--cream)}
  <div>
   <div class="chip"><span class="stars">★★★★★</span> 5,0 no Booksy e no Google</div>
   <h1>Tradição de<br><i>barbearia,</i><br>corte de agora.</h1>
-  <p>No Itaim Paulista, com clima de família, cafezinho por conta da casa e profissionais que acertam no corte, na barba e na química.</p>
+  <p>No Itaim Paulista, com clima de família, cafezinho por conta da casa e um barbeiro que acerta no corte, na barba e na química.</p>
   <div class="cta">
    <a class="btn btn-red bk" href="#" target="_blank" rel="noopener">Agendar meu horário →</a>
    <a class="btn btn-line" href="#servicos">Ver serviços e preços</a>
@@ -167,7 +167,7 @@ footer a{color:var(--cream)}
    <div><b>5,0</b><span>92 avaliações no Booksy</span></div>
    <div><b>5,0</b><span>41 avaliações no Google</span></div>
    <div><b>+20</b><span>serviços no cardápio</span></div>
-   <div><b>2</b><span>barbeiros: Tonny e Rafael</span></div>
+   <div><b>100%</b><span>atendimento com o Tonny</span></div>
   </div>
   <div class="open"><span class="dot" id="odot"></span><span id="otxt">Carregando horário…</span></div>
  </div>
@@ -189,10 +189,9 @@ footer a{color:var(--cream)}
 </div></section>
 
 <section class="dark" id="equipe"><div class="wrap">
- <div class="re"><span class="kick" style="color:#f08a95">Equipe</span><h2>Quem cuida<br>do seu <i style="color:#f08a95">visual</i></h2></div>
- <div class="team">
-  <div class="bb re"><div class="av">T</div><div><h3>Tonny</h3><p>À frente da casa e presente em boa parte das avaliações de clientes confirmados no Booksy.</p><a class="bk" href="#" target="_blank" rel="noopener">Agendar com o Tonny →</a></div></div>
-  <div class="bb re"><div class="av">R</div><div><h3>Rafael</h3><p>O Rafa, lembrado pelo nome pelos clientes que cortam com ele há anos.</p><a class="bk" href="#" target="_blank" rel="noopener">Agendar com o Rafael →</a></div></div>
+ <div class="re"><span class="kick" style="color:#f08a95">O barbeiro</span><h2>Quem cuida<br>do seu <i style="color:#f08a95">visual</i></h2></div>
+ <div class="team" style="grid-template-columns:1fr">
+  <div class="bb re"><div class="av">T</div><div><h3>Tonny</h3><p>Barbeiro e dono da casa. Cada cliente é atendido por ele, do começo ao fim: corte, barba e química com o mesmo cuidado, toda vez.</p><a class="bk" href="#" target="_blank" rel="noopener">Agendar com o Tonny →</a></div></div>
  </div>
  <div class="perks">
   <div class="pk re"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg><b>Cafezinho</b><span>Por conta da casa</span></div>
@@ -263,15 +262,13 @@ show('cab');
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');show(b.dataset.f)});
 
 const R=[
- ['Mickael','Corto o cabelo há anos com o Rafa e ele é um ótimo profissional! A barbearia tem funcionários talentosos, atendimento exemplar e corte de qualidade. O clima é familiar, onde todos se sentem confortáveis, desde adultos até crianças.'],
  ['Felipe Lopes','Rapaziada manda bem demais, a melhor barbearia da região do Itaim.'],
  ['Savak','Ótimo atendimento! Corte impecável, e sem faltar aquele cafezinho 😂'],
  ['Douglas Lopes','Barbearia com ótimos profissionais, agora eles têm uns planos de corte por assinatura que valem muito a pena.'],
  ['Daniel Araújo','Ambiente aconchegante e profissionais de alta qualidade. Qualidade de corte garantida.'],
  ['Santa Pá','O único lugar que me deixa menos feio kkkkk. Ambiente top, galera do bem! Ótimos profissionais.'],
  ['Nes Cau','Ótimo atendimento, rápido e de qualidade. Vale lembrar o cafezinho também, que tava top.'],
- ['Fabio Lourenço','Qualidade do corte muito boa e um ótimo atendimento também.'],
- ['Gabriel Dobem','Excelente atendimento com o barbeiro Rafael.']
+ ['Fabio Lourenço','Qualidade do corte muito boa e um ótimo atendimento também.']
 ];
 document.getElementById('rvs').innerHTML=R.map(r=>`<div class="rv re"><div class="stars">★★★★★</div><p>${r[1]}</p><div class="who"><i>${r[0][0]}</i><div>${r[0]}<small>Avaliação no Google</small></div></div></div>`).join('');
 
